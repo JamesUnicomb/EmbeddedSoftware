@@ -10,7 +10,7 @@ void main( void )
   P1DIR |= BIT0;                // P1.0 as output
   P4DIR |= BIT7;                // P4.7 as outout
 
-  P1OUT &= ~BIT0;                // P1.0 to low
+  P1OUT &= ~BIT0;               // P1.0 to low
   P4OUT |= BIT7;                // P4.7 to high
 
 
