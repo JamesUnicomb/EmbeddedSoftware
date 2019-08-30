@@ -30,10 +30,8 @@ void main( void )
 #pragma vector=PORT2_VECTOR
 __interrupt void Port_2(void)
 {
-    unsigned int i;
     P1OUT ^= BIT0;              // Toggle P1.0
     P4OUT ^= BIT7;              // Toggle P4.7
-    for(i = 0; i < 1000; i++);  //delay
     P2IFG &= ~BIT1;             // P2.1 interrupt flag cleared
 }
 
