@@ -6,9 +6,9 @@ void setup() {
 
 void loop() {
   int sensorValue = analogRead(A3);
-  float voltage = sensorValue * (3.0 / 1023.0);   
+  float voltage = sensorValue * (1.0 / 1023.0);   
 
-  if (voltage > 1.5) {
+  if (voltage > 0.5) {
     digitalWrite(RED_LED, HIGH);
     digitalWrite(GREEN_LED, LOW);
   }
