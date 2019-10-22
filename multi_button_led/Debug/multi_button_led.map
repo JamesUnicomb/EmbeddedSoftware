@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker Unix v18.12.2                  
 ******************************************************************************
->> Linked Tue Oct 22 23:20:32 2019
+>> Linked Wed Oct 23 09:10:24 2019
 
 OUTPUT FILE NAME:   <multi_button_led.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00004400
@@ -85,7 +85,7 @@ MEMORY CONFIGURATION
   INT61                 0000fffa   00000002  00000002  00000000  RWIX
   INT62                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FLASH2                00010000   00014400  00000082  0001437e  RWIX
+  FLASH2                00010000   00014400  000000c2  0001433e  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -186,19 +186,21 @@ SYSNMI     0    0000fffc    00000002
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_rd_eabi.lib : boot.c.obj (.reset)
 
-.text      0    00010000    00000082     
-                  00010000    00000078     main.obj (.text:main)
-                  00010078    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
-                  0001007e    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+.text      0    00010000    000000c2     
+                  00010000    0000008c     main.obj (.text:main)
+                  0001008c    0000001c     main.obj (.text:turn_on_leds)
+                  000100a8    00000010     main.obj (.text:turn_off_leds)
+                  000100b8    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
+                  000100be    00000004                            : pre_init.c.obj (.text:_system_pre_init)
 
 MODULE SUMMARY
 
        Module             code   ro data   rw data
        ------             ----   -------   -------
     ./
-       main.obj           120    0         0      
+       main.obj           184    0         0      
     +--+------------------+------+---------+---------+
-       Total:             120    0         0      
+       Total:             184    0         0      
                                                   
     /home/james/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib/rts430x_lc_rd_eabi.lib
        boot.c.obj         20     2         0      
@@ -232,7 +234,7 @@ MODULE SUMMARY
                                                   
        Stack:             0      0         160    
     +--+------------------+------+---------+---------+
-       Grand Total:       158    46        160    
+       Grand Total:       222    46        160    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -321,7 +323,7 @@ address   name
 00000732  ADC12MEM9             
 00000733  ADC12MEM9_H           
 00000732  ADC12MEM9_L           
-00010078  C$$EXIT               
+000100b8  C$$EXIT               
 000008c0  CBCTL0                
 000008c1  CBCTL0_H              
 000008c0  CBCTL0_L              
@@ -1002,9 +1004,11 @@ ffffffff  __c_args__
 00004400  _c_int00_noinit_noargs
 0000fffe  _reset_vector         
 00004360  _stack                
-0001007e  _system_pre_init      
-00010078  abort                 
+000100be  _system_pre_init      
+000100b8  abort                 
 00010000  main                  
+000100a8  turn_off_leds         
+0001008c  turn_on_leds          
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1770,12 +1774,14 @@ address   name
 0000fffc  __TI_int62            
 0000fffe  _reset_vector         
 00010000  main                  
-00010078  C$$EXIT               
-00010078  abort                 
-0001007e  _system_pre_init      
+0001008c  turn_on_leds          
+000100a8  turn_off_leds         
+000100b8  C$$EXIT               
+000100b8  abort                 
+000100be  _system_pre_init      
 ffffffff  __TI_pprof_out_hndl   
 ffffffff  __TI_prof_data_size   
 ffffffff  __TI_prof_data_start  
 ffffffff  __c_args__            
 
-[766 symbols]
+[768 symbols]
