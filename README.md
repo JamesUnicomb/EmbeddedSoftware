@@ -23,6 +23,8 @@ To demonstrate the different capabilities and ease of use (for beginners or expe
 
 
 
-### Multi Button LED with CCS and MSP430F5529
+## Multi Button LED with CCS and MSP430F5529
+
+### Polling the Buttons
 
 [![](https://img.youtube.com/vi/Awbru2NQ8YU/0.jpg)](https://www.youtube.com/watch?v=Awbru2NQ8YU)
