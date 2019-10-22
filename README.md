@@ -20,3 +20,9 @@ To demonstrate the different capabilities and ease of use (for beginners or expe
 ### Code Composer Studio and MSP430-F5529
 
 [![](https://img.youtube.com/vi/IhO6AkYmdy4/0.jpg)](https://www.youtube.com/watch?v=IhO6AkYmdy4)
+
+
+
+### Multi Button LED with CCS and MSP430F5529
+
+[![](https://img.youtube.com/vi/Awbru2NQ8YU/0.jpg)](https://www.youtube.com/watch?v=Awbru2NQ8YU)
