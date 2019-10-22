@@ -27,9 +27,7 @@ void main(void)
     P3DIR |= BIT7;                  // red LED
     P8DIR |= BIT2;                  // green LED
 
-    P4OUT &= ~BIT0;                 // set LEDs to low
-    P3OUT &= ~BIT7;
-    P8OUT &= ~BIT2;
+    turn_off_leds();                // set LEDs to low
 
     while(1)
     {
