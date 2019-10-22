@@ -28,3 +28,7 @@ To demonstrate the different capabilities and ease of use (for beginners or expe
 ### Polling the Buttons
 
 [![](https://img.youtube.com/vi/Awbru2NQ8YU/0.jpg)](https://www.youtube.com/watch?v=Awbru2NQ8YU)
+
+### Using Interrupts
+
+[![](https://img.youtube.com/vi/Ost1X7Dabis/0.jpg)](https://www.youtube.com/watch?v=Ost1X7Dabis)
