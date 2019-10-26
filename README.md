@@ -1,5 +1,4 @@
-# EmbeddedSoftware
-
+# Texas Instruments Launchpad
 
 ## Button LED
 Using interrupts to switch LEDs on/off.
@@ -32,3 +31,10 @@ To demonstrate the different capabilities and ease of use (for beginners or expe
 ### Using Interrupts
 
 [![](https://img.youtube.com/vi/Ost1X7Dabis/0.jpg)](https://www.youtube.com/watch?v=Ost1X7Dabis)
+
+
+# STM32F3 Discovery Board
+
+## Blinked RGB LED
+
+[![](https://img.youtube.com/vi/nkdFjqbN3M8/0.jpg)](https://www.youtube.com/watch?v=nkdFjqbN3M8)
